@@ -1,0 +1,127 @@
+/* font families used : 
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
+
+:root {
+    font-size: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding: 5em 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.6;
+}
+
+.main {
+    width: min(90%,850px);
+}
+
+section {
+    padding: 2.8em 0;
+    color : hsl(0, 0%, 95%);
+    font-size: 1rem;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+#sedans {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#sedans button {
+    color: hsl(31, 77%, 52%);
+}
+
+#suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#suvs button {
+    color: hsl(184, 100%, 22%);
+}
+
+#luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#luxury button {
+    color: hsl(179, 100%, 13%);
+}
+
+section h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    margin: 0.6em 0;
+    letter-spacing: 1.1px;
+}
+
+section p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+section button {
+    margin: 2em 0 0;
+    padding: 1em 2.2em;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+@media (min-width : 500px) {
+    :root {
+        font-size: 15px;
+    }
+}
+
+@media (min-width : 700px) {
+    :root {
+        font-size: 16px;
+    }
+    body {
+        padding: 0;
+    }
+    .row {
+        display: flex;
+    }
+    .row section {
+        width: 100%;
+    }
+    section p {
+        font-size: 0.9rem;
+    }
+    section button {
+        margin: 3.5em 0 0 0;
+    }
+    #sedans {
+        border-radius: 0;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    #luxury {
+        border-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
